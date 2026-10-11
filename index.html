@@ -53,7 +53,9 @@ a:hover{color:#08596a}
 h1{font-size:clamp(2.25rem,1.4rem + 3.6vw,4rem);line-height:1.08;letter-spacing:-.035em;font-weight:700;max-width:14em}
 .lead{max-width:36em;margin-top:var(--s3);color:var(--muted)}
 .actions{display:flex;flex-wrap:wrap;gap:var(--s2);margin-top:var(--s4)}
-.portrait{width:min(100%,280px);aspect-ratio:1;object-fit:cover;object-position:center top;border-radius:12px;border:1px solid var(--line);justify-self:end;background:#fff}
+.portrait{width:min(100%,280px);aspect-ratio:1;object-fit:cover;object-position:center;border-radius:12px;border:1px solid var(--line);justify-self:end;background:#fff}
+.topic h3{font-size:1rem;margin-bottom:var(--s1)}
+.topic .meta{display:block;font-size:.8rem;font-weight:600;letter-spacing:.04em;color:var(--green-dark);margin-bottom:var(--s2)}
 
 .section{padding:var(--s12) 0 0;border-bottom:1px solid var(--line)}
 .section--tint{background:var(--tint)}
@@ -232,6 +234,7 @@ h3{font-size:1.125rem;line-height:1.3;letter-spacing:-.01em;font-weight:600;marg
     <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
     <nav id="menu" class="nav__links" aria-label="Primary">
       <a href="#work">Work</a>
+      <a href="#curriculum">Bootcamp</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -257,7 +260,7 @@ h3{font-size:1.125rem;line-height:1.3;letter-spacing:-.01em;font-weight:600;marg
           <a class="btn btn--secondary" href="https://github.com/peculiaruc">GitHub</a>
         </div>
       </div>
-      <img class="portrait" src="assets/profile.jpg" width="280" height="280" alt="Portrait of Peculiar C. Umeh">
+      <img class="portrait" src="assets/hero.jpg" width="280" height="280" alt="Server racks lit with cyan lights">
     </div>
   </div>
 </section>
@@ -369,6 +372,37 @@ h3{font-size:1.125rem;line-height:1.3;letter-spacing:-.01em;font-weight:600;marg
   <div class="bridge" aria-hidden="true"><canvas></canvas></div>
 </section>
 
+<section class="section section--tint" id="curriculum" aria-labelledby="curriculum-title">
+  <div class="container">
+    <div class="head">
+      <h2 id="curriculum-title">What I learned in the bootcamp</h2>
+      <p>The Mastering Backend AI Engineering Bootcamp, topic by topic. Each summary is the idea I took away, not a claim that I am an expert in it.</p>
+    </div>
+    <div class="cards">
+      <article class="card topic"><span class="meta">01</span><h3>Introduction to AI Engineering</h3><p>What an AI engineer actually ships: a product around a model, with a backend, data, and a way to measure whether the system helps.</p></article>
+      <article class="card topic"><span class="meta">02</span><h3>Prompt and context engineering</h3><p>How to write instructions, examples, and retrieved text so the model stays on task instead of guessing.</p></article>
+      <article class="card topic"><span class="meta">03</span><h3>Project architecture and setup</h3><p>How to structure a service: folders, environment files, scripts, and a layout that a teammate can run.</p></article>
+      <article class="card topic"><span class="meta">04</span><h3>Database layer and migrations</h3><p>How tables, schemas, and migrations keep data changes reversible instead of editing the live database by hand.</p></article>
+      <article class="card topic"><span class="meta">05</span><h3>Authentication and authorization</h3><p>Login proves who you are. Authorization decides what you may do. Tokens, sessions, and protected routes sit in between.</p></article>
+      <article class="card topic"><span class="meta">06</span><h3>API design and validation</h3><p>Clear routes, status codes, and request schemas so bad input fails at the door instead of inside the handler.</p></article>
+      <article class="card topic"><span class="meta">07</span><h3>Error handling and testing</h3><p>Predictable error responses, and tests that cover the paths that break: auth, validation, and the happy path.</p></article>
+      <article class="card topic"><span class="meta">08</span><h3>Role-based access control</h3><p>Roles such as user and admin, permissions on each action, and hiding records the caller should not see.</p></article>
+      <article class="card topic"><span class="meta">09</span><h3>Multi-entity business logic</h3><p>Users, documents, conversations, and other records that belong together, with rules for who owns what.</p></article>
+      <article class="card topic"><span class="meta">10</span><h3>Background jobs and queues</h3><p>Work that should not block a request, such as ingesting a file, runs on a queue and reports status later.</p></article>
+      <article class="card topic"><span class="meta">11</span><h3>External API integration</h3><p>Calling another service, handling timeouts and keys, and treating that service as a dependency you can fail gracefully.</p></article>
+      <article class="card topic"><span class="meta">12</span><h3>Caching strategies</h3><p>Store expensive results for a while so repeated reads do not hit the database or the model every time.</p></article>
+      <article class="card topic"><span class="meta">13</span><h3>Rate limiting and protection</h3><p>Caps on how often a client may call an endpoint, so one user cannot exhaust the API or the model budget.</p></article>
+      <article class="card topic"><span class="meta">14</span><h3>Security hardening</h3><p>Secrets out of Git, HTTPS, headers, and input hygiene so the service is harder to misuse.</p></article>
+      <article class="card topic"><span class="meta">15</span><h3>Observability infrastructure</h3><p>Logs, health checks, and traces so you can see what failed, for whom, and how long it took.</p></article>
+      <article class="card topic"><span class="meta">16</span><h3>Vector database and embeddings</h3><p>Turn text into vectors and store them so similar meaning can be found, not only exact keywords.</p></article>
+      <article class="card topic"><span class="meta">17</span><h3>Document ingestion pipeline</h3><p>Upload, split, embed, and store a file so later questions can use pieces of that file as context.</p></article>
+      <article class="card topic"><span class="meta">18</span><h3>RAG implementation</h3><p>Retrieve the closest chunks, put them in the prompt, and answer from that context instead of from memory alone.</p></article>
+      <article class="card topic"><span class="meta">19</span><h3>AI agents</h3><p>A loop that plans a step, calls a tool or an API, then continues until the task is done or it should stop.</p></article>
+    </div>
+  </div>
+  <div class="bridge" aria-hidden="true"><canvas></canvas></div>
+</section>
+
 <section class="section section--tint" id="approach" aria-labelledby="approach-title">
   <div class="container">
     <div class="head">
@@ -395,7 +429,7 @@ h3{font-size:1.125rem;line-height:1.3;letter-spacing:-.01em;font-weight:600;marg
     </div>
     <ol class="steps steps--4">
       <li><h3>Before</h3><p>Android and Kotlin apps, then project leadership across CHAOSS, Andela Learning Community, and consulting teams.</p></li>
-      <li><h3>Bootcamp</h3><p>Authenticated APIs, PostgreSQL with Prisma, request validation, tests, and how a conversation endpoint is shaped.</p></li>
+      <li><h3>Bootcamp</h3><p>The full path from APIs and access control through RAG, embeddings, and agents. Details sit in What I learned in the bootcamp.</p></li>
       <li><h3>Projects</h3><p>DocuChat, the guided API, and Pricebot, the team commerce product with a shopping assistant.</p></li>
       <li><h3>Next</h3><p>Deeper model integration on document chat, and backend roles where I can explain the system as well as the code.</p></li>
     </ol>
