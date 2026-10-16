@@ -122,8 +122,8 @@
         <ol class="flow" aria-label="DocuChat request flow"><li style="--i:0">User</li><li style="--i:1">JWT auth</li><li style="--i:2">Express API</li><li style="--i:3">Permissions</li><li style="--i:4">PostgreSQL</li></ol>
         <p class="note">Health check at <span class="meta">/health</span>. API docs at <span class="meta">/api-docs</span>.</p>
       </article>
-      <article class="b b--6 b--lead"><h3>Problem</h3><p>People cannot ask questions of their files until the server knows who they are and which documents they own.</p></article>
-      <article class="b b--6 b--lead"><h3>Solution</h3><p>DocuChat is that server: accounts, document records, and conversations, documented with Swagger and covered by tests.</p></article>
+      <!-- <article class="b b--6 b--lead"><h3>Problem</h3><p>People cannot ask questions of their files until the server knows who they are and which documents they own.</p></article>
+      <article class="b b--6 b--lead"><h3>Solution</h3><p>DocuChat is that server: accounts, document records, and conversations, documented with Swagger and covered by tests.</p></article> -->
       <article class="b"><h3>AI component</h3><p>A signed-in user opens a conversation and sends a message. The API checks the thread belongs to them, validates the body with Zod, and returns the message on that conversation.</p></article>
       <article class="b"><h3>My contribution</h3><p>Authentication, admin permissions, tests, and the README. I also stopped the environment file from being tracked so secrets stay off GitHub.</p></article>
       <article class="b"><h3>Challenges</h3><p>Access control. A user can read their own document. Someone else gets a not-found response unless they hold the manage permission.</p></article>
