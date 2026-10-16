@@ -16,8 +16,23 @@
 
 <header class="nav">
   <div class="container nav__in">
-    <a class="nav__brand" href="#top">Peculiar C. Umeh</a>
-    <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+
+    <!-- Left: brand information -->
+    <div class="nav__brand-group">
+      <a class="nav__brand" href="#top">Peculiar C. Umeh</a>
+      <p class="hero__role">AI ENGINEER</p>
+      <p class="hero__tags">BACKEND / APIS / AI SYSTEMS</p>
+    </div>
+
+    <button
+      class="nav__toggle"
+      aria-expanded="false"
+      aria-controls="menu"
+    >
+      Menu
+    </button>
+
+    <!-- Right: navigation links -->
     <nav id="menu" class="nav__links" aria-label="Primary">
       <a href="#work">Work</a>
       <a href="#curriculum">Bootcamp</a>
@@ -36,11 +51,8 @@
     <div class="hero__copy">
       <div>
         <a class="status" href="#contact"><span class="status__dot" aria-hidden="true"></span>Open to opportunities<span class="status__go">Say hello</span></a>
-        <p class="hero__name">PECULIAR C. UMEH</p>
-        <p class="hero__role">AI ENGINEER</p>
-        <p class="hero__tags">BACKEND / APIS / AI SYSTEMS</p>
         <h1 id="hero-title">Build the API. Give the model a job.</h1>
-        <p class="lead">Software engineer and technical project manager in Port Harcourt. I build authenticated backends, then put a language model where it helps a real user finish a task.</p>
+        <p class="lead">Software engineer and technical project manager. I build authenticated backends, then put a language model where it helps a real user finish a task.</p>
         <div class="actions">
           <a class="btn btn--primary" href="#work">View my work</a>
           <a class="btn btn--secondary" href="https://github.com/peculiaruc">GitHub</a>
@@ -53,13 +65,13 @@
 
 <section class="roles" aria-labelledby="roles-title">
   <div class="container"><h2 class="roles__label" id="roles-title">Open to roles such as</h2></div>
-  <div class="marquee"><div class="marquee__track"><ul><li>AI Engineer</li><li>Backend Engineer</li><li>Software Engineer</li><li>API Developer</li><li>Technical Project Manager</li><li>LLM Application Developer</li><li>Python Developer</li><li>Associate AI Engineer</li></ul><ul aria-hidden="true"><li>AI Engineer</li><li>Backend Engineer</li><li>Software Engineer</li><li>API Developer</li><li>Technical Project Manager</li><li>LLM Application Developer</li><li>Python Developer</li><li>Associate AI Engineer</li></ul></div></div>
+  <div class="marquee"><div class="marquee__track"><ul><li>AI Engineer</li><li>Backend Engineer</li><li>Software Engineer</li><li>Associate AI Engineer</li></ul></div></div>
 </section>
 
 <section class="section" id="work" aria-labelledby="work-title">
   <div class="container">
     <div class="head">
-      <h2 id="work-title">Selected work</h2>
+      <h2 id="work-title">Projects</h2>
       <div>
         <p>Two projects from the Mastering Backend AI Engineering Bootcamp: the guided build, and the team submission.</p>
       </div>
@@ -67,8 +79,7 @@
     <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Selected projects">
       <ul class="carousel__track" id="track" tabindex="0" aria-label="Projects, use arrow keys to scroll">
         <li class="card slide" role="group" aria-roledescription="slide" aria-label="1 of 2">
-          <h3>DocuChat</h3>
-          <p class="meta">Bootcamp project</p>
+          <h3>Bootcamp project: DocuChat</h3>
           <p><strong>Problem.</strong> A document chat product needs accounts, permissions, and stored conversations before a model can answer.</p>
           <p><strong>Built.</strong> An Express API for register and login, document records, and conversations, with OpenAPI docs and tests.</p>
           <p><strong>Stack.</strong> TypeScript, Express, Prisma, PostgreSQL, JWT, Zod</p>
@@ -76,9 +87,8 @@
           <p class="links"><a href="https://github.com/peculiaruc/Docuchat-1">GitHub, DocuChat</a></p>
         </li>
         <li class="card slide" role="group" aria-roledescription="slide" aria-label="2 of 2">
-          <h3>Financial Risk Intelligence Platform</h3>
-          <p class="meta">Group project</p>
-          <p><strong>Problem.</strong> Digital financial transactions are fast and distributed across banks, fintechs, payment platforms and digital channels. Financial technology therefore needs systems that can identify unusual transaction patterns quickly, give risk teams useful context, and preserve evidence of how a transaction was assessed and what action followed.</p>
+          <h3>Group project: Financial Risk Intelligence Platform</h3>
+          <p><strong>Problem.</strong>Financial technology needs systems that can identify unusual transaction patterns quickly, give risk teams useful context, and preserve evidence of how a transaction was assessed and what action followed.</p>
           <p><strong>Built.</strong> Digital financial transactions with risk assessment, alerting, investigation and auditability.</p>
           <p><strong>Stack.</strong> Python, FastAPI, SQLAlchemy, SQLite, Alembic, JWT</p>
           <p><strong>AI component.</strong> Risk assessment algorithms for identifying unusual transaction patterns.</p>
@@ -102,7 +112,7 @@
   <div class="container">
     <div class="head">
       <h2 id="cs-title">Project case studies</h2>
-      <p>Each project is a story: the problem, the path through the system, the AI piece, and the part I owned.</p>
+      <!-- <p>Each project is a story: the problem, the path through the system, the AI piece, and the part I owned.</p> -->
     </div>
 
     <p class="kicker">01 / BOOTCAMP PROJECT</p>
