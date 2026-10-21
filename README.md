@@ -11,18 +11,6 @@ This project includes:
 - Shared styling in `assets/styles.css`
 - A hero image in `assets/hero.jpg`
 
-## Project structure
-
-```text
-AI-Eng-Portfolio/
-├── index.html
-├── resume.html
-├── README.md
-├── assets/
-│   ├── hero.jpg
-│   └── styles.css
-└── .nojekyll
-```
 
 ## Run locally
 
@@ -31,14 +19,9 @@ Because this is a simple static website, you can either:
 1. Open `index.html` directly in a browser, or
 2. Run a local server:
 
-```bash
-python -m http.server 8000
-```
-
-## Pages
 
 ### Portfolio
-The main landing page presents:
+[The main landing page presents:](https://peculiaruc.github.io/AI-Eng-Portfolio/)
 
 - AI and backend engineering work
 - project case studies
@@ -53,6 +36,3 @@ The resume page is a clean, printable CV version with:
 - selected project work
 - education and technical skills
 
-## Notes
-
-This site is intentionally lightweight and dependency-free, making it easy to host on GitHub Pages or any static hosting provider.
