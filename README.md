@@ -1,46 +1,58 @@
-﻿# Peculiar C. Umeh — AI Engineering Portfolio
+﻿# AI Engineering Portfolio
 
-A standalone HTML, CSS, and JavaScript site for the Mastering Backend AI Engineering Bootcamp. It is a one-page portfolio plus a printable CV, ready for GitHub Pages.
+A personal portfolio and resume site for Peculiar C. Umeh, showcasing AI engineering, backend work, and project experience.
 
-Live site (after Pages is enabled): `https://peculiaruc.github.io/AI-Eng-Portfolio/`
+## Overview
 
-## Pages
+This project includes:
 
-| File | Purpose |
-| --- | --- |
-| [`index.html`](index.html) | Portfolio: intro, projects, case studies, skills, bootcamp topics, GitHub, contact |
-| [`resume.html`](resume.html) | CV with experience, education, and the same two featured projects |
+- A portfolio landing page at `index.html`
+- A CV/resume page at `resume.html`
+- Shared styling in `assets/styles.css`
+- A hero image in `assets/hero.jpg`
 
-Shared look and behaviour:
+## Project structure
 
-- [`assets/styles.css`](assets/styles.css) — layout, colours (`#13AECD` buttons on a white background)
-- [`assets/script.js`](assets/script.js) — mobile menu, scroll reveal, hero/footer canvases, project carousel
-- [`assets/hero.jpg`](assets/hero.jpg) — hero image
-
-`index.html` loads both the stylesheet and the script. `resume.html` loads the stylesheet only.
-
-## Featured work
-
-1. **DocuChat** (bootcamp project) — authenticated document and conversation API.  
-   [github.com/peculiaruc/Docuchat-1](https://github.com/peculiaruc/Docuchat-1)
-
-2. **Financial Risk Intelligence Platform** (group project) — transaction risk assessment, alerting, investigation, and auditability.  
-   [Project write-up](https://docs.google.com/document/d/1r9DbkZ8oZ-py4OMwsxAxlR_WTl6VayoDq1d4ChIwwW4/edit?tab=t.0)
-
-## Required links on the site
-
-- GitHub profile: [github.com/peculiaruc](https://github.com/peculiaruc)
-- LinkedIn: [linkedin.com/in/peculiar-c-umeh](https://www.linkedin.com/in/peculiar-c-umeh)
-- CV: [`resume.html`](resume.html)
-- Email: [peculiarumeh02@gmail.com](mailto:peculiarumeh02@gmail.com)
+```text
+AI-Eng-Portfolio/
+├── index.html
+├── resume.html
+├── README.md
+├── assets/
+│   ├── hero.jpg
+│   └── styles.css
+└── .nojekyll
+```
 
 ## Run locally
+
+Because this is a simple static website, you can either:
+
+1. Open `index.html` directly in a browser, or
+2. Run a local server:
 
 ```bash
 python -m http.server 8000
 ```
 
-## GitHub Pages
+## Pages
 
-[github.com/peculiaruc/AI-Eng-Portfolio](https://github.com/peculiaruc/AI-Eng-Portfolio).
+### Portfolio
+The main landing page presents:
 
+- AI and backend engineering work
+- project case studies
+- technical skills
+- bootcamp learning journey
+- contact links
+
+### Resume
+The resume page is a clean, printable CV version with:
+
+- summary and experience
+- selected project work
+- education and technical skills
+
+## Notes
+
+This site is intentionally lightweight and dependency-free, making it easy to host on GitHub Pages or any static hosting provider.
